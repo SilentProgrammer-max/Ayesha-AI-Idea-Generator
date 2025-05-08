@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🚀 AI Project Idea Generator</title>
+</head>
+<body>
+    <h1>AI Project Idea Generator</h1>
+    <form id="idea-form">
+        <input type="text" name="prompt" placeholder="Enter topic like AI, Motivation..." required>
+        <button type="submit">Generate Idea</button>
+    </form>
+    <h3>💡 Idea:</h3>
+    <div id="result"></div>
+
+    <script>
+        const form = document.getElementById("idea-form");
+        form.onsubmit = async (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const response = await fetch("/generate", {
+                method: "POST",
+                body: formData
+            });
+            const data = await response.json();
+            document.getElementById("result").innerText = data.idea || "❌ Error: " + data.error;
+        };
+    </script>
+</body>
+</html>
+
