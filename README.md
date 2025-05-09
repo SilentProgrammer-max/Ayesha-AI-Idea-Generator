@@ -35,3 +35,5 @@ This is an AI-based project to generate ideas based on user input. It uses advan
 
 ## License
 MIT License
+
+
