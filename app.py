@@ -2,7 +2,6 @@ from flask import Flask, request, jsonify, render_template
 import requests
 import os
 from dotenv import load_dotenv
-
 # Load environment variables
 load_dotenv()
 API_KEY = os.getenv("HUGGINGFACE_API_KEY")
