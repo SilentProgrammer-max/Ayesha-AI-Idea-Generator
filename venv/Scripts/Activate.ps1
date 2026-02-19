@@ -160,7 +160,6 @@ function Get-PyVenvConfig(
 }
 
 <# Begin Activate script --------------------------------------------------- #>
-
 # Determine the containing directory of this script
 $VenvExecPath = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $VenvExecDir = Get-Item -Path $VenvExecPath
