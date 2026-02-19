@@ -159,7 +159,6 @@ function Get-PyVenvConfig(
     return $pyvenvConfig
 }
 
-
 <# Begin Activate script --------------------------------------------------- #>
 
 # Determine the containing directory of this script
