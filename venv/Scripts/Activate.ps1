@@ -110,7 +110,6 @@ function global:deactivate ([switch]$NonDestructive) {
         Remove-Item -Path function:deactivate
     }
 }
-
 <#
 .Description
 Get-PyVenvConfig parses the values from the pyvenv.cfg file located in the
