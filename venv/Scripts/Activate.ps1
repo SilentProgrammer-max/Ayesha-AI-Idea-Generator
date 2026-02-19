@@ -56,7 +56,6 @@ Param(
     $Prompt
 )
 <# Function declarations --------------------------------------------------- #>
-
 <#
 .Synopsis
 Remove all shell session elements added by the Activate script, including the
