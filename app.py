@@ -7,7 +7,6 @@ load_dotenv()
 API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 
 app = Flask(__name__)
-
 # Updated: Hugging Face Inference API function with Falcon model
 def query_huggingface(prompt):
     API_URL = "https://api-inference.huggingface.co/models/tiiuae/falcon-7b-instruct"
