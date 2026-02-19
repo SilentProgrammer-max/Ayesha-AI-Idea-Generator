@@ -56,7 +56,6 @@ Param(
     [String]
     $Prompt
 )
-
 <# Function declarations --------------------------------------------------- #>
 
 <#
