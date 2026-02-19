@@ -22,7 +22,7 @@ def query_huggingface(prompt):
             return "❌ Model returned an unexpected response."
     else:
         return f"Error: {response.status_code} - {response.text}"
-
+        
 @app.route("/")
 def home():
     return render_template("index.html")
