@@ -182,6 +182,7 @@ else {
 
 # Next, read the `pyvenv.cfg` file to determine any required value such
 # as `prompt`.
+
 $pyvenvCfg = Get-PyVenvConfig -ConfigDir $VenvDir
 
 # Next, set the prompt from the command line, or the config file, or
